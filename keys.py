@@ -1,0 +1,5 @@
+consumer_key = "HUiPk72vE4OhuLwR70yBjBqkO"
+consumer_secret = "Hx2n0U1XOdfMV5SDIOreSj4fKhwn6xyasBD6NY4HHshGdRTKU3"
+
+Acess_Token = "1205189035444047875-xOplpgFX0ejUDzz5z22IK0PmIIPErc"
+Acess_Token_Secret = "H4YNB1DU9IYsFKL5x5coJkKdYpY60WhSRg1U7AfJH9YQ5"
