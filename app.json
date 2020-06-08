@@ -1,0 +1,8 @@
+{
+    "name": "Bot Arnaldo",
+    "description": "Bot que responde 'A regra é clara! Não pode!' quando alguém diz: 'Pode isso, Arnaldo?' ",
+    "repository": "https://github.com/juliancassimiro/botDoArnaldo",
+    "keywords": ["python"],
+    "addons": [ "" ]
+    }
+  }

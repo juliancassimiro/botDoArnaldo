@@ -34,25 +34,25 @@ class MyStreamListener(tweepy.StreamListener):
         stt = status.text.lower()
         if(stt == "pode isso arnaldo?" or stt == "pode isso, arnaldo?"):
             #msg = "@" + status.user.screen_name + " Diga lá, Tino!"
-            msg = "A regra é clara! Não pode!"
-            api.update_status(status = msg, in_reply_to_status_id = status.id, auto_populate_reply_metadata = True)
-            api.create_favorite(status.id)
-            print(status.text)
+            # msg = "A regra é clara! Não pode!"
+            # api.update_status(status = msg, in_reply_to_status_id = status.id, auto_populate_reply_metadata = True)
+            # api.create_favorite(status.id)
             print("ok")
-            print(msg)
+            print(stt)
+            # print(msg)
             print("----------")
 
         else:
             usuarios = MyStreamListener.acao(self, stt)
             if usuarios:
                 #msg = "@" + status.user.screen_name + " " + usuarios + " Diga lá, Tino!"
-                msg = "A regra é clara! Não pode!"
-                print(status.text)
+                # msg = "A regra é clara! Não pode!"
                 print("ok2")
-                print(msg)
+                print(stt)
+                # print(msg)
                 print("----------")
-                api.update_status(status = msg, in_reply_to_status_id = status.id, auto_populate_reply_metadata = True)
-                api.create_favorite(status.id)
+                # api.update_status(status = msg, in_reply_to_status_id = status.id, auto_populate_reply_metadata = True)
+                # api.create_favorite(status.id)
                     
         
     def on_error(self, status_code):
@@ -104,7 +104,7 @@ def rodar():
     try:
         print('Bot rodando')
         myStream = tweepy.Stream(auth = api.auth, listener=myStreamListener)
-        myStream.filter(track=['pode isso Arnaldo?','pode isso, Arnaldo?'])
+        myStream.filter(track=['pode isso Arnaldo?'])
 
     except Exception as inst:
         print(inst)
